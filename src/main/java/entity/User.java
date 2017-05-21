@@ -3,12 +3,10 @@ package entity;
 import org.dozer.Mapping;
 
 public class User {
-    @Mapping("login")
+//    @Mapping("login")
     private String name;
-
     private  int age;
     private Company company;
-    // инициализировать лучше так или в констукторе?
 
     public User(String name, int age) {
         this.name = name;
