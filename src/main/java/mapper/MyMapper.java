@@ -4,6 +4,7 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class MyMapper {
 
     //работает если Class полей уникален иначе мапит первые сопоставления

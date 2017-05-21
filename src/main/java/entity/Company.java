@@ -3,12 +3,12 @@ package entity;
 /**
  * Created by Admin on 21.05.2017.
  */
-public class Conpany {
+public class Company {
     private String name;
 
     @Override
     public String toString() {
-        return "Conpany{" +
+        return "Company{" +
                 "name='" + name + '\'' +
                 '}';
     }
@@ -21,7 +21,7 @@ public class Conpany {
         this.name = name;
     }
 
-    public Conpany(String name) {
+    public Company(String name) {
 
         this.name = name;
     }

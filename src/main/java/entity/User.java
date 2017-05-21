@@ -1,17 +1,20 @@
 package entity;
 
-/**
- * Created by Admin on 21.05.2017.
- */
+import org.dozer.Mapping;
+
 public class User {
+    @Mapping("login")
     private String name;
+
     private  int age;
-    private Conpany company = new Conpany("yyy");
+    private Company company;
     // инициализировать лучше так или в констукторе?
 
     public User(String name, int age) {
         this.name = name;
         this.age = age;
+        company = new Company("yyy");
+
     }
 
     @Override
@@ -39,11 +42,11 @@ public class User {
         this.age = age;
     }
 
-    public Conpany getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(Conpany company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 }
